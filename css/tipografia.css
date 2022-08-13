@@ -1,0 +1,23 @@
+.font-1-xxl {
+  font: 400 6rem "Arizonia", cursive;
+}
+
+.font-1-xl {
+  font: 400 4rem "Arizonia", cursive;
+}
+
+.font-1-l {
+  font: 400 2.5rem "Arizonia", cursive;
+}
+
+.font-1-m {
+  font: 400 1.125rem "Arizonia", cursive;
+}
+
+.font-2-m {
+  font: 400 1.5rem "OpenSans", Arial;
+}
+
+.font-2-s {
+  font: 400 1.25rem "OpenSans", Arial;
+}
