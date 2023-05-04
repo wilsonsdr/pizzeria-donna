@@ -32,7 +32,7 @@ export default function Menu() {
               : "border-neutral-300 hover:text-[#ff0000]"
           }`}
         >
-          <a className="px-16" onClick={() => handleClick("Tradicionais")}>
+          <a className="px-8" onClick={() => handleClick("Tradicionais")}>
             Tradicionais
           </a>
         </li>
@@ -43,7 +43,7 @@ export default function Menu() {
               : "border-neutral-300 hover:text-[#ff0000]"
           }`}
         >
-          <a className="px-16" onClick={() => handleClick("Especiais")}>
+          <a className="px-8" onClick={() => handleClick("Especiais")}>
             Especiais
           </a>
         </li>
@@ -54,7 +54,7 @@ export default function Menu() {
               : "border-neutral-300 hover:text-[#ff0000]"
           }`}
         >
-          <a className="px-16" onClick={() => handleClick("Doce")}>
+          <a className="px-8" onClick={() => handleClick("Doce")}>
             Doce
           </a>
         </li>
@@ -65,7 +65,7 @@ export default function Menu() {
               : "border-neutral-300 hover:text-[#ff0000]"
           }`}
         >
-          <a className="px-16" onClick={() => handleClick("Fit")}>
+          <a className="px-8" onClick={() => handleClick("Fit")}>
             Fit
           </a>
         </li>
