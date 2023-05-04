@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "public/script/watson.tsx", "src/components/elements/WatsonAssistant.tsx"],
   "exclude": ["node_modules"]
 }
