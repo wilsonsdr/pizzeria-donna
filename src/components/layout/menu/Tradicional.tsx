@@ -56,7 +56,7 @@ export default function Tradicional() {
           <List
             text="Calabresa"
             price="55,00"
-            ingredients="Linguiça calabresa, queijo muçarela, orégano, cebola"
+            ingredients="Linguiça calabresa, queijo muçarela, orégano e cebola"
           />
         </ContainerChild>
         <ContainerChild

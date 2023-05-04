@@ -47,6 +47,31 @@ export default function Especial() {
           />
         </ContainerChild>
       </Container>
+      <Container gap={Gap["32px"]} align={Align.start}>
+        <ContainerChild
+          gap={Gap["16px"]}
+          mdSize={MdSize.w6v12}
+          orientation={Orientation.mdCol}
+        >
+          <List
+            text="Calabresa"
+            price="55,00"
+            ingredients="Linguiça calabresa, queijo muçarela, orégano e cebola"
+          />
+        </ContainerChild>
+        <ContainerChild
+          gap={Gap["16px"]}
+          mdSize={MdSize.w6v12}
+          orientation={Orientation.mdCol}
+          justify={Justify.left}
+        >
+          <List
+            text="Philadelphia"
+            price="55,00"
+            ingredients="Peito de peru, cream cheese Philadelphia e tomate seco"
+          />
+        </ContainerChild>
+      </Container>
     </div>
   );
 }
