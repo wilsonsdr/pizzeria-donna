@@ -1,15 +1,20 @@
-import { Orientation, Gap, Justify, PX } from "../enum";
+import { Orientation, Justify, PX, Align, Gap } from "../enum";
 import { LgSize, MdSize, XlSize } from "../enum/reponsive-sizes";
 
 interface ContainerProps {
   children: React.ReactNode;
-  gap?: Gap,
+  align?: Align;
+  justify?: Justify;
   px?: PX;
+  orientation?: Orientation;
+  gap: Gap;
 }
 
 export default function Container(props: ContainerProps) {
   return (
-    <div className={`flex items-center justify-center h-full w-full max-md:flex-col ${props.gap} ${props.px}`}>
+    <div
+      className={`flex h-full w-full max-md:flex-col ${props.justify} ${props.align} ${props.px} ${props.orientation} ${props.gap} `}
+    >
       {props.children}
     </div>
   );
@@ -22,7 +27,7 @@ interface ContainerChildProps {
   xlSize?: XlSize;
   justify?: Justify;
   orientation?: Orientation;
-  gap?: Gap;
+  gap: Gap;
 }
 
 export function ContainerChild(props: ContainerChildProps) {

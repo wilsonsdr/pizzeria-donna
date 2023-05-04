@@ -1,20 +1,26 @@
 import React from "react";
 import Image from "next/image";
 import Container, { ContainerChild } from "@/components/elements/Container";
-import { MdSize, Orientation, Justify, Gap } from "@/components/enum";
+import {
+  MdSize,
+  Orientation,
+  Justify,
+  Align,
+  PX,
+  Gap,
+} from "@/components/enum";
 import Subtitle, { SubtitleContainer } from "@/components/elements/Subtitle";
 import P from "@/components/elements/P";
-import Section from "@/components/elements/Section";
-import { PX } from "@/components/enum/padding";
+import SectionMain from "@/components/elements/SectionMain";
 
 export default function Experience() {
   return (
-    <Section px={PX["32px"]} gap={Gap["160px"]}>
-      <SubtitleContainer>
+    <SectionMain gap={Gap["80px"]} px={PX["32px"]}>
+      <SubtitleContainer gap={Gap["16px"]}>
         <Subtitle text="Unidos por um só motivo" />
         <P text="Somos a primeira pizzaria a focar nesse tipo de serviço. Contribuindo com uma melhor experiência, segurança, conforto e qualidade. Para realizar um pedido basta usar o nosso chatbot!!!" />
       </SubtitleContainer>
-      <Container gap={Gap["16px"]}>
+      <Container align={Align.center} gap={Gap["32px"]}>
         <ContainerChild
           mdSize={MdSize.w6v12}
           justify={Justify.center}
@@ -32,7 +38,7 @@ export default function Experience() {
             </li>
           </ul>
         </ContainerChild>
-        <ContainerChild mdSize={MdSize.w6v12}>
+        <ContainerChild gap={Gap["0px"]} mdSize={MdSize.w6v12}>
           <Image
             className="bg-cover bg-center bg-no-repeat object-cover max-md:h-[300px]"
             src={"/img/pizza01.webp"}
@@ -42,6 +48,6 @@ export default function Experience() {
           ></Image>
         </ContainerChild>
       </Container>
-    </Section>
+    </SectionMain>
   );
 }

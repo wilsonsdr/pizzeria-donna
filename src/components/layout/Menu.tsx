@@ -1,33 +1,86 @@
-import React from "react";
+import React, { use, useState } from "react";
 import Image from "next/image";
-import { Gap } from "@/components/enum";
 import Subtitle, { SubtitleContainer } from "@/components/elements/Subtitle";
 import P from "@/components/elements/P";
-import Section from "@/components/elements/Section";
-import { PX } from "@/components/enum/padding";
-import { Color } from "@/components/enum/color";
+import SectionMain from "@/components/elements/SectionMain";
+import { PX, Color, Gap } from "@/components/enum/";
+import Tradicional from "./menu/Tradicional";
+import Especial from "./menu/Especial";
+import Fit from "./menu/Fit";
+import Doce from "./menu/Doce";
 
 export default function Menu() {
+  const [activeMenu, setActiveMenu] = useState("Tradicionais");
+  const [showMenu, setShowMenu] = useState("Tradicionais");
+
+  const handleClick = (menu: string) => {
+    setActiveMenu(menu);
+    setShowMenu(menu);
+  };
+
   return (
-    <Section px={PX["32px"]} gap={Gap["80px"]}>
-      <SubtitleContainer>
+    <SectionMain gap={Gap["80px"]} px={PX["32px"]}>
+      <SubtitleContainer gap={Gap["16px"]}>
         <Subtitle text="Cardapío" color={Color.red} />
         <P text="Grande variedades de produtos e ingredientes, não deixe para amanhã o que você pode comer hoje." />
       </SubtitleContainer>
-      <ul className="flex items-center justify-center gap-4 text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
-        <li className="cursor-pointer rounded-sm border-[1px] border-neutral-300 px-4 py-2">
-          <a>Tradicionais</a>
+      <ul className="relative flex items-center justify-center gap-8 text-center text-xl max-md:flex-col sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
+        <li
+          className={`cursor-pointer rounded-sm border-[1px] py-2 transition duration-200 ease-out ${
+            showMenu === "Tradicionais"
+              ? "bg-[#ff0000] text-white"
+              : "border-neutral-300 hover:text-[#ff0000]"
+          }`}
+        >
+          <a className="px-16" onClick={() => handleClick("Tradicionais")}>
+            Tradicionais
+          </a>
         </li>
-        <li className="cursor-pointer rounded-sm border-[1px] border-neutral-300 px-4 py-2">
-          <a>Especiais</a>
+        <li
+          className={`cursor-pointer rounded-sm border-[1px] py-2 transition duration-200 ease-out ${
+            showMenu === "Especiais"
+              ? "bg-[#ff0000] text-white"
+              : "border-neutral-300 hover:text-[#ff0000]"
+          }`}
+        >
+          <a className="px-16" onClick={() => handleClick("Especiais")}>
+            Especiais
+          </a>
         </li>
-        <li className="cursor-pointer rounded-sm border-[1px] border-neutral-300 px-4 py-2">
-          <a>Fit</a>
+        <li
+          className={`cursor-pointer rounded-sm border-[1px] py-2 transition duration-200 ease-out ${
+            showMenu === "Doce"
+              ? "bg-[#ff0000] text-white"
+              : "border-neutral-300 hover:text-[#ff0000]"
+          }`}
+        >
+          <a className="px-16" onClick={() => handleClick("Doce")}>
+            Doce
+          </a>
         </li>
-        <li className="cursor-pointer rounded-sm border-[1px] border-neutral-300 px-4 py-2">
-          <a>Doces</a>
+        <li
+          className={`cursor-pointer rounded-sm border-[1px] py-2 transition duration-200 ease-out ${
+            showMenu === "Fit"
+              ? "bg-[#ff0000] text-white"
+              : "border-neutral-300 hover:text-[#ff0000]"
+          }`}
+        >
+          <a className="px-16" onClick={() => handleClick("Fit")}>
+            Fit
+          </a>
         </li>
       </ul>
-    </Section>
+      {showMenu === "Tradicionais" && <Tradicional />}
+      {showMenu === "Especiais" && <Especial />}
+      {showMenu === "Doce" && <Doce />}
+      {showMenu === "Fit" && <Fit />}
+      <Image
+        className="absolute top-0 -left-2"
+        src={"/img/decorative/pepper.svg"}
+        alt="folha"
+        width={100}
+        height={100}
+      ></Image>
+    </SectionMain>
   );
 }

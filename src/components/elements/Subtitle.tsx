@@ -1,17 +1,16 @@
 import React from "react";
-import { Color, PY, PX } from "../enum/";
+import { Color, Gap, PY } from "../enum/";
 
 interface SubtitleProps {
   text: string;
   color?: Color;
-  px?: PX;
   py?: PY;
 }
 
 export default function Subtitle(props: SubtitleProps) {
   return (
     <h2
-      className={`font-title text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl ${props.color} ${props.px} ${props.py}`}
+      className={`font-title text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl ${props.color} ${props.py}`}
     >
       {props.text}
     </h2>
@@ -21,11 +20,14 @@ export default function Subtitle(props: SubtitleProps) {
 interface SubtitleContainerProps {
   children: React.ReactNode;
   color?: Color;
+  gap: Gap;
 }
 
 export function SubtitleContainer(props: SubtitleContainerProps) {
   return (
-    <div className="item-center flex flex-col justify-center gap-4 text-center">
+    <div
+      className={`item-center flex flex-col justify-center text-center ${props.gap}`}
+    >
       {props.children}
     </div>
   );
