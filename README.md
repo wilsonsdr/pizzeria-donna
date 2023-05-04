@@ -14,11 +14,9 @@ Pensando nisso, desenvolvi uma landing page com design de uma pizzaria, em que a
 | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="https://user-images.githubusercontent.com/81364355/184733110-058516f8-5cb8-4837-b89e-9b1f9728e5b7.gif" width=300> | `Funcionalidade 1`: Informar o nome, nesse caso, somente nomes femininos foram adicionados ao banco de dados <br> `Funcionalidade 2`: Informar o endereço e o complemento juntos <br> `Funcionalidade 3a`: Caso optar por selecionar "Pizza Broto" indicará que a vítima está sozinha <br> `Funcionalidade 3b`: Caso optar por selecionar "Pizza Média" indicará que a vítima está acompanhada <br> `Funcionalidade 4`: Informar caso haja facas ou armas de fogo no ambiente <br> `Funcionalidade 5`: Sua denúncia foi realizada e suas informações serão repassadas à polícia |
 
-<br>
-
 ### Como acessar o projeto
 
-Você pode acessar clicando nesse [link](https://portfolio-wilsonsdr.vercel.app)
+Você pode acessar clicando nesse [link](https://pizzaria-donna.vercel.app/)
 
 ### Como rodar o projeto localmente
 
