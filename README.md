@@ -2,9 +2,9 @@
 
 # Descrição do projeto
 
-Este projeto foi elaborado durante o meu período de estágio na IBM, o tema era livre, porém era obrigatório que utilizasse uma ferramenta ou serviço da empresa para realização do projeto, optei por utilizar o Watson Assistant, para criação de um chatbot
+Este projeto foi elaborado durante o meu período de estágio na IBM, o tema era livre, porém era obrigatório que utilizasse uma ferramenta da empresa para realização do projeto, optei por utilizar o IBM Watson Assistant, para criação de um chatbot
 
-O tema escolhido foi a violência doméstica contra as mulheres e crianças, um dos problemas relacionado a isso é por não ter um meio de comunicação confiável e seguro, em que a vítima possa realizar a sua denúncia de forma discreta sem causar suspeita do agressor
+O tema escolhido foi a violência doméstica contra as mulheres, um dos problemas relacionado a isso é por não ter um meio de comunicação confiável e seguro, em que a vítima possa realizar a sua denúncia de forma discreta sem causar suspeita do agressor
 
 Pensando nisso, desenvolvi uma landing page com design de uma pizzaria, em que a vítima simularia estar realizando um pedido de uma pizza através do chatbot, mas na realidade, as informações fornecidas serão repassadas diretamente a polícia
 
