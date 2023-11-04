@@ -24,7 +24,7 @@ export default function Experiencia() {
           </ul>
         </ContainerChild>
         <ContainerChild gap={Gap['0px']} mdSize={MdSize.w6v12}>
-          <Image className='bg-cover bg-center bg-no-repeat object-cover max-md:h-[300px]' src={'/img/pizza01.webp'} width={700} height={500} alt='pessoa fazendo pizza'></Image>
+          <Image className='bg-cover bg-center bg-no-repeat object-cover max-md:h-[300px]' src={'/img/pizza01.jpg'} width={800} height={500} alt='pessoa fazendo pizza'></Image>
         </ContainerChild>
       </Container>
     </SectionMain>
