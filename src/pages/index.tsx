@@ -30,17 +30,17 @@ export default function Home() {
       <main className='flex flex-col'>
         <Container gap={Gap['80px']} px={PX['32px']}>
           <SubtitleContainer gap={Gap['16px']} color={Color.black}>
-            <Subtitle text='Unidos por um só motivo' />
-            <P text='Somos a primeira pizzaria a focar nesse tipo de serviço. Contribuindo com uma melhor experiência, segurança, conforto e qualidade. Para realizar um pedido basta usar o nosso chatbot!!!' />
+            <Subtitle text='United just for one reason' />
+            <P text='We are the first pizzeria to focus on this kind of service. Contributing to a better experience, security, comfort and quality. To place an order, simply use our chatbot! ' />
           </SubtitleContainer>
           <Grid gap={Gap['32px']}>
             <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['16px']}>
-              <Subtitle text='Não tenha medo de pedir, a fome não espera' />
-              <ul className='text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>
-                <li>✓ Ingredientes de primeira qualidade</li>
-                <li>✓ Receitas inspiradas</li>
-                <li>✓ Amor em cada detalhe</li>
-                <li>✓ Nosso compromisso é estar sempre presente e atendendo às suas necessidades</li>
+              <Subtitle text="Don't be afraid, the hungry doens't have to wait" />
+              <ul className='text-black md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>
+                <li> ✓ First quality ingredients</li>
+                <li> ✓ Inspired recipes</li>
+                <li> ✓ Love in every detail</li>
+                <li> ✓ Our commitment is to always be present and meet your needs</li>
               </ul>
             </GridChild>
             <GridChild gap={Gap['0px']} mdSize={MdSize.w6v12}>
