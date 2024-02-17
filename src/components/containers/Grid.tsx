@@ -25,5 +25,5 @@ interface GridChildProps {
 }
 
 export function GridChild(props: GridChildProps) {
-  return <div className={`flex w-full items-start justify-center ${props.justify} ${props.mdSize} ${props.orientation} ${props.gap} max-md:flex-col max-md:text-center`}>{props.children}</div>;
+  return <div className={`flex w-full ${props.justify} ${props.mdSize} ${props.orientation} ${props.gap} max-md:flex-col max-md:text-center`}>{props.children}</div>;
 }

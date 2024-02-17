@@ -9,7 +9,7 @@ interface BackgroundImageProps {
 export default function BackgroundImage(props: BackgroundImageProps) {
   return (
     <div
-      className='h-[700px] bg-cover bg-center bg-no-repeat object-cover'
+      className='h-[700px] w-full bg-cover bg-center bg-no-repeat object-cover'
       style={{
         backgroundImage: `url(${props.url})`,
       }}

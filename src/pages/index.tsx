@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <header>
-        <BackgroundImage url='/img/banner-bg.webp'>
+        <BackgroundImage url='/img/background/pizza01.jpg'>
           <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
             <h1 className='flex gap-4 font-title text-5xl tracking-wider max-sm:flex-col sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl'>
               <span className='text-[#2ba600]'>Pizzaria</span>
@@ -35,7 +35,7 @@ export default function Home() {
             <Subtitle text='Unidos por um só motivo' />
             <P text='Somos a primeira pizzaria a focar nesse tipo de serviço. Contribuindo com uma melhor experiência, segurança, conforto e qualidade. Para realizar um pedido basta usar o nosso chatbot!!!' />
           </SubtitleContainer>
-          <Grid align={Align.center} gap={Gap['32px']}>
+          <Grid gap={Gap['32px']}>
             <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['16px']}>
               <Subtitle text='Não tenha medo de pedir, a fome não espera' />
               <ul className='text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>
@@ -46,17 +46,17 @@ export default function Home() {
               </ul>
             </GridChild>
             <GridChild gap={Gap['0px']} mdSize={MdSize.w6v12}>
-              <Image className='bg-cover bg-center bg-no-repeat object-cover max-md:h-[300px]' src={'/img/pizza01.webp'} width={800} height={500} alt='pessoa fazendo pizza'></Image>
+              <Image priority={true} className='bg-cover bg-center bg-no-repeat object-cover max-md:h-[300px]' src={'/img/background/pizza02.jpg'} width={800} height={500} alt='pessoa fazendo pizza'></Image>
             </GridChild>
           </Grid>
         </Container>
         <Container gap={Gap['0px']} px={PX['0px']}>
-          <BackgroundImage url='/img/pizza02.webp'>
+          <BackgroundImage url='/img/background/pizza03.jpg'>
             <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
               <Subtitle text='Promoção da semana' color={Color.green} py={PY['32px']} />
               <Grid gap={Gap['0px']} justify={Justify.center}>
                 <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
-                  <Image className='h-[400px] w-full bg-cover bg-center bg-no-repeat object-cover max-md:hidden' src={'/img/pizza03.webp'} width={1280} height={1280} alt='pizza de calabresa'></Image>
+                  <Image priority={true} className='h-[400px] w-full bg-cover bg-center bg-no-repeat object-cover max-md:hidden' src={'/img/background/pizza03.jpg'} width={1280} height={1280} alt='pizza de calabresa'></Image>
                 </GridChild>
                 <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
                   <div className='flex h-[250px] w-full items-center justify-center border-r-4 border-r-[#2ba600] text-white max-md:h-auto max-md:border-b-4 max-md:border-r-0 max-md:border-b-[#2ba600] max-md:border-r-transparent'>
@@ -104,18 +104,18 @@ export default function Home() {
           {showMenu === 'Especiais' && <Especial />}
           {showMenu === 'Doce' && <Doce />}
           {showMenu === 'Fit' && <Fit />}
-          <Image className='absolute -left-2 top-0' src={'/img/decorative/pepper.svg'} alt='folha' width={100} height={100}></Image>
+          <Image priority={true} className='absolute -left-2 top-0' src={'/img/decorative/pepper.svg'} alt='folha' width={100} height={100}></Image>
         </Container>
       </main>
       <footer>
-        <BackgroundImage url='/img/banner-bg.webp'>
+        <BackgroundImage url='/img/background/footer.jpg'>
           <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
             <h1 className='flex gap-4 font-title text-5xl tracking-wider max-sm:flex-col sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl'>
               <span className='text-[#2ba600]'>Pizzaria</span>
               <span className='text-white'>d'</span>
               <span className='text-[#ff0000]'>Donna</span>
             </h1>
-            <Image className='absolute -top-[40px] right-7' src={'/img/decorative/tomato.svg'} alt='folha' width={100} height={100}></Image>
+            <Image priority={true} className='absolute -top-[70px] right-7' src={'/img/decorative/tomato.svg'} alt='folha' width={100} height={100}></Image>
           </BackgroundOverlay>
         </BackgroundImage>
       </footer>
