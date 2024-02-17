@@ -56,7 +56,7 @@ export default function Home() {
               <Subtitle text='Promoção da semana' color={Color.green} py={PY['32px']} />
               <Grid gap={Gap['0px']} justify={Justify.center}>
                 <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
-                  <Image className='h-[300px] w-full bg-cover bg-center bg-no-repeat object-cover max-md:hidden' src={'/img/pizza03.webp'} width={1280} height={1280} alt='pizza de calabresa'></Image>
+                  <Image className='h-[400px] w-full bg-cover bg-center bg-no-repeat object-cover max-md:hidden' src={'/img/pizza03.webp'} width={1280} height={1280} alt='pizza de calabresa'></Image>
                 </GridChild>
                 <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
                   <div className='flex h-[250px] w-full items-center justify-center border-r-4 border-r-[#2ba600] text-white max-md:h-auto max-md:border-b-4 max-md:border-r-0 max-md:border-b-[#2ba600] max-md:border-r-transparent'>
@@ -107,6 +107,18 @@ export default function Home() {
           <Image className='absolute -left-2 top-0' src={'/img/decorative/pepper.svg'} alt='folha' width={100} height={100}></Image>
         </Container>
       </main>
+      <footer>
+        <BackgroundImage url='/img/banner-bg.webp'>
+          <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
+            <h1 className='flex gap-4 font-title text-5xl tracking-wider max-sm:flex-col sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl'>
+              <span className='text-[#2ba600]'>Pizzaria</span>
+              <span className='text-white'>d'</span>
+              <span className='text-[#ff0000]'>Donna</span>
+            </h1>
+            <Image className='absolute -top-[40px] right-7' src={'/img/decorative/tomato.svg'} alt='folha' width={100} height={100}></Image>
+          </BackgroundOverlay>
+        </BackgroundImage>
+      </footer>
     </>
   );
 }

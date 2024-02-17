@@ -7,5 +7,5 @@ interface ContainerProps {
 }
 
 export default function Container(props: ContainerProps) {
-  return <section className={`relative flex flex-col pt-20 ${props.px} ${props.gap}`}>{props.children}</section>;
+  return <section className={`relative flex flex-col py-20 ${props.px} ${props.gap}`}>{props.children}</section>;
 }
