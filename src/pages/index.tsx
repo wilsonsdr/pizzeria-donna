@@ -1,11 +1,11 @@
-import BackgroundImage, { BackgroundOverlay } from '@/components/elements/BackgroundImage';
+import BackgroundImage, { BackgroundOverlay } from '@/components/layout/BackgroundImage';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { MdSize, Orientation, Justify, Align, PY, PX, Gap, Color } from '@/components/enum';
 import Subtitle, { SubtitleContainer } from '@/components/elements/Subtitle';
 import P from '@/components/elements/P';
-import Container from '@/components/containers/Container';
-import Grid, { GridChild } from '@/components/containers/Grid';
+import Container from '@/components/layout/Container';
+import Grid, { GridChild } from '@/components/layout/Grid';
 import { Doce, Especial, Fit, Tradicional } from '@/components/menu/Menu';
 
 export default function Home() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import List from '@/components/elements/List';
-import Grid, { GridChild } from '@/components/containers/Grid';
+import Grid, { GridChild } from '@/components/layout/Grid';
 import { Align, Gap, Justify, MdSize, Orientation } from '@/components/enum';
 
 export default function Fit() {
