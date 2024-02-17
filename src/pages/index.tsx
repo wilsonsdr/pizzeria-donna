@@ -1,7 +1,7 @@
 import BackgroundImage, { BackgroundOverlay } from '@/components/elements/BackgroundImage';
 import Image from 'next/image';
 import React from 'react';
-import { MdSize, Orientation, Justify, Align, PY, PX, Gap } from '@/components/enum';
+import { MdSize, Orientation, Justify, Align, PY, PX, Gap, Color } from '@/components/enum';
 import Subtitle, { SubtitleContainer } from '@/components/elements/Subtitle';
 import P from '@/components/elements/P';
 import Container from '@/components/containers/Container';
@@ -42,6 +42,29 @@ export default function Home() {
               <Image className='bg-cover bg-center bg-no-repeat object-cover max-md:h-[300px]' src={'/img/pizza01.webp'} width={800} height={500} alt='pessoa fazendo pizza'></Image>
             </GridChild>
           </Grid>
+        </Container>
+        <Container gap={Gap['0px']} px={PX['0px']}>
+          <BackgroundImage url='/img/pizza02.webp'>
+            <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
+              <Subtitle text='Promoção da semana' color={Color.green} py={PY['32px']} />
+              <Grid gap={Gap['0px']} justify={Justify.center}>
+                <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
+                  <Image className='h-[300px] w-full bg-cover bg-center bg-no-repeat object-cover max-md:hidden' src={'/img/pizza03.webp'} width={1280} height={1280} alt='pizza de calabresa'></Image>
+                </GridChild>
+                <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
+                  <div className='flex h-[250px] w-full items-center justify-center border-r-4 border-r-[#2ba600] text-white max-md:h-auto max-md:border-b-4 max-md:border-r-0 max-md:border-b-[#2ba600] max-md:border-r-transparent'>
+                    <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
+                      <SubtitleContainer gap={Gap['16px']}>
+                        <h3 className='font-title text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>Pizza Calabresa</h3>
+                        <p>É especialmente preparada com recheio de linguiça calabresa de primeira qualidade, queijo muçarela e orégano. A massa deliciosa e macia e a borda crocante complementam a nossa versão da pizza de Calabresa.</p>
+                      </SubtitleContainer>
+                    </BackgroundOverlay>
+                  </div>
+                </GridChild>
+              </Grid>
+              <Image priority={true} className='absolute -top-14 right-0' src={'/img/decorative/leaf.svg'} alt='folha' width={60} height={60}></Image>
+            </BackgroundOverlay>
+          </BackgroundImage>
         </Container>
       </main>
     </>
