@@ -78,27 +78,19 @@ export default function Home() {
             <Subtitle text='Cardapío' color={Color.red} />
             <P text='Grande variedades de produtos e ingredientes, não deixe para amanhã o que você pode comer hoje.' />
           </SubtitleContainer>
-          <ul className='relative flex items-center justify-center gap-8 text-center text-xl max-md:flex-col sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>
-            <li className={`cursor-pointer rounded-sm border-[1px] py-2 transition duration-200 ease-out ${showMenu === 'Tradicionais' ? 'bg-[#ff0000] text-white' : 'border-neutral-300 hover:text-[#ff0000]'}`}>
-              <a className='px-8' onClick={() => handleClick('Tradicionais')}>
-                Tradicionais
-              </a>
-            </li>
-            <li className={`cursor-pointer rounded-sm border-[1px] py-2 transition duration-200 ease-out ${showMenu === 'Especiais' ? 'bg-[#ff0000] text-white' : 'border-neutral-300 hover:text-[#ff0000]'}`}>
-              <a className='px-8' onClick={() => handleClick('Especiais')}>
-                Especiais
-              </a>
-            </li>
-            <li className={`cursor-pointer rounded-sm border-[1px] py-2 transition duration-200 ease-out ${showMenu === 'Doce' ? 'bg-[#ff0000] text-white' : 'border-neutral-300 hover:text-[#ff0000]'}`}>
-              <a className='px-8' onClick={() => handleClick('Doce')}>
-                Doce
-              </a>
-            </li>
-            <li className={`cursor-pointer rounded-sm border-[1px] py-2 transition duration-200 ease-out ${showMenu === 'Fit' ? 'bg-[#ff0000] text-white' : 'border-neutral-300 hover:text-[#ff0000]'}`}>
-              <a className='px-8' onClick={() => handleClick('Fit')}>
-                Fit
-              </a>
-            </li>
+          <ul className='relative m-auto flex w-6/12 items-center justify-center gap-8 text-center text-xl max-md:flex-col max-sm:w-full sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>
+            <a className={`w-1/2 cursor-pointer rounded-sm border-[1px] px-6 py-2 transition duration-200 ease-out ${showMenu === 'Tradicionais' ? 'bg-[#ff0000] text-white' : 'border-neutral-300 hover:text-[#ff0000]'}`} onClick={() => handleClick('Tradicionais')}>
+              Tradicionais
+            </a>
+            <a className={`w-1/2 cursor-pointer rounded-sm border-[1px] px-6 py-2 transition duration-200 ease-out ${showMenu === 'Especiais' ? 'bg-[#ff0000] text-white' : 'border-neutral-300 hover:text-[#ff0000]'}`} onClick={() => handleClick('Especiais')}>
+              Especiais
+            </a>
+            <a className={`w-1/2 cursor-pointer rounded-sm border-[1px] px-6 py-2 transition duration-200 ease-out ${showMenu === 'Doce' ? 'bg-[#ff0000] text-white' : 'border-neutral-300 hover:text-[#ff0000]'}`} onClick={() => handleClick('Doce')}>
+              Doce
+            </a>
+            <a className={`w-1/2 cursor-pointer rounded-sm border-[1px] px-6 py-2 transition duration-200 ease-out ${showMenu === 'Fit' ? 'bg-[#ff0000] text-white' : 'border-neutral-300 hover:text-[#ff0000]'}`} onClick={() => handleClick('Fit')}>
+              Fit
+            </a>
           </ul>
           {showMenu === 'Tradicionais' && <Tradicional />}
           {showMenu === 'Especiais' && <Especial />}
