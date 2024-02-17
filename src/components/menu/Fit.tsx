@@ -5,7 +5,7 @@ import { Gap, Justify, MdSize, Orientation } from '@/components/enum';
 
 export default function Fit() {
   return (
-    <div className='flex flex-col gap-8'>
+    <ul className='flex flex-col gap-8'>
       <Grid gap={Gap['32px']}>
         <GridChild gap={Gap['16px']} mdSize={MdSize.w6v12} orientation={Orientation.mdCol}>
           <List text='Fit' price='51,00' ingredients='Frango desfiado, ovos, brócolos, cebola roxa, palmido e azeitona preta' />
@@ -27,6 +27,6 @@ export default function Fit() {
           <List text='Vegetariana' price='49,00' ingredients='Berinjela, ervilhas frescas, champignon, rodelas de palmito, mussarela de búfala e azeitona preta' />
         </GridChild>
       </Grid>
-    </div>
+    </ul>
   );
 }

@@ -5,7 +5,7 @@ import { Gap, Justify, MdSize, Orientation } from '@/components/enum';
 
 export default function Especial() {
   return (
-    <div className='flex flex-col gap-8'>
+    <ul className='flex flex-col gap-8'>
       <Grid gap={Gap['32px']}>
         <GridChild gap={Gap['16px']} mdSize={MdSize.w6v12} orientation={Orientation.mdCol}>
           <List text='Champignon' price='55,00' ingredients='Champignon fatiado, cebola, catupiry e azeitona preta' />
@@ -30,6 +30,6 @@ export default function Especial() {
           <List text='Philadelphia' price='55,00' ingredients='Peito de peru, cream cheese Philadelphia e tomate seco' />
         </GridChild>
       </Grid>
-    </div>
+    </ul>
   );
 }

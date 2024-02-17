@@ -5,10 +5,10 @@ import { Gap, Justify, MdSize, Orientation } from '@/components/enum';
 
 export default function Tradicional() {
   return (
-    <div className='flex flex-col gap-8'>
+    <ul className='flex flex-col gap-8'>
       <Grid gap={Gap['32px']}>
         <GridChild gap={Gap['16px']} mdSize={MdSize.w6v12} orientation={Orientation.mdCol}>
-          <List text='Champignon' price='55,00' ingredients='Champignon fatiado, cebola, catupiry e azeitona preta' />
+            <List text='Champignon' price='55,00' ingredients='Champignon fatiado, cebola, catupiry e azeitona preta' />
         </GridChild>
         <GridChild gap={Gap['16px']} mdSize={MdSize.w6v12} orientation={Orientation.mdCol} justify={Justify.left}>
           <List text='Mafiosa' price='55,00' ingredients='Molho Branco, abobrinha, gorgonzola, parmesão e azeitona preta' />
@@ -62,6 +62,6 @@ export default function Tradicional() {
           <List text='Prestígio' price='42,00' ingredients='Beijinho com chocolate' />
         </GridChild>
       </Grid>
-    </div>
+    </ul>
   );
 }

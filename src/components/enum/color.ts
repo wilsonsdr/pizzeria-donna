@@ -1,5 +1,6 @@
 export enum Color {
-  green = 'text-[#2ba600]',
+  green = 'text-green',
   white = 'text-white',
-  red = 'text-[#ff0000]',
+  red = 'text-red',
+  black = 'text-black',
 }

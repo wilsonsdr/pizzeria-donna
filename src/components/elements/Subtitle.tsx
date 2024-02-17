@@ -13,10 +13,10 @@ export default function Subtitle(props: SubtitleProps) {
 
 interface SubtitleContainerProps {
   children: React.ReactNode;
-  color?: Color;
+  color: Color;
   gap: Gap;
 }
 
 export function SubtitleContainer(props: SubtitleContainerProps) {
-  return <div className={`item-center flex flex-col justify-center text-center ${props.gap}`}>{props.children}</div>;
+  return <div className={`item-center flex flex-col justify-center text-center ${props.gap} ${props.color}`}>{props.children}</div>;
 }

@@ -5,5 +5,5 @@ interface PProps {
 }
 
 export default function P(props: PProps) {
-  return <p className='text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl'>{props.text}</p>;
+  return <p className='text-black sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl'>{props.text}</p>;
 }

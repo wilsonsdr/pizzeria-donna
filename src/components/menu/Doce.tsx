@@ -5,7 +5,7 @@ import { Gap, MdSize } from '@/components/enum';
 
 export default function Doce() {
   return (
-    <div className='flex flex-col gap-8'>
+    <ul className='flex flex-col gap-8'>
       <Grid gap={Gap['32px']}>
         <GridChild gap={Gap['16px']} mdSize={MdSize.w6v12}>
           <List text='Brigadeiro' price='42,00' ingredients='Chocolate ao leite com granulado' />
@@ -20,6 +20,6 @@ export default function Doce() {
         </GridChild>
         <GridChild gap={Gap['16px']} mdSize={MdSize.w6v12}></GridChild>
       </Grid>
-    </div>
+    </ul>
   );
 }
