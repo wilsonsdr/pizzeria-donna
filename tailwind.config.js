@@ -12,6 +12,12 @@ module.exports = {
       title: ['Lobster', 'cursive'],
       body: ['Apercu', 'sans-serif'],
     },
+    colors: {
+      green: '#2ba600',
+      white: '#ffffff',
+      red: '#ff0000',
+      black: '#000000',
+    },
   },
   plugins: [],
 };
