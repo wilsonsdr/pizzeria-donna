@@ -1,7 +1,7 @@
-import BackgroundImage, { BackgroundOverlay } from '@/components/layout/BackgroundImage';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { MdSize, Orientation, Justify, Align, PY, PX, Gap, Color } from '@/components/enum';
+import BackgroundImage, { BackgroundOverlay } from '@/components/layout/BackgroundImage';
+import { MdSize, Orientation, Justify, PY, PX, Gap, Color } from '@/components/enum';
 import Subtitle, { SubtitleContainer } from '@/components/elements/Subtitle';
 import P from '@/components/elements/P';
 import Container from '@/components/layout/Container';
@@ -78,7 +78,7 @@ export default function Home() {
             <Subtitle text='Cardapío' color={Color.red} />
             <P text='Grande variedades de produtos e ingredientes, não deixe para amanhã o que você pode comer hoje.' />
           </SubtitleContainer>
-          <ul className='relative m-auto flex w-6/12 items-center justify-center gap-8 text-center text-xl max-md:flex-col max-sm:w-full sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>
+          <ul className='relative m-auto flex w-7/12 items-center justify-center gap-8 text-center text-xl max-md:flex-col max-sm:w-full sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>
             <a className={`w-1/2 cursor-pointer rounded-sm border-[1px] px-6 py-2 transition duration-200 ease-out ${showMenu === 'Tradicionais' ? 'bg-[#ff0000] text-white' : 'border-neutral-300 hover:text-[#ff0000]'}`} onClick={() => handleClick('Tradicionais')}>
               Tradicionais
             </a>

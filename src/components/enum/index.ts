@@ -5,5 +5,4 @@ import { LgGridCols, MdGridCols } from './grid-columns';
 import { Gap } from './gap';
 import { PX, PY } from './padding';
 import { Color } from './color';
-import { Align } from './align';
-export { LgSize, MdSize, XlSize, Justify, Orientation, LgGridCols, MdGridCols, Gap, PX, PY, Color, Align };
+export { LgSize, MdSize, XlSize, Justify, Orientation, LgGridCols, MdGridCols, Gap, PX, PY, Color };

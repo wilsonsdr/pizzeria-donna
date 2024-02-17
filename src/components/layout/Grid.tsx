@@ -1,9 +1,8 @@
-import { Orientation, Justify, PX, Align, Gap } from '../enum';
+import { Orientation, Justify, PX, Gap } from '../enum';
 import { LgSize, MdSize, XlSize } from '../enum/reponsive-sizes';
 
 interface GridProps {
   children: React.ReactNode;
-  align?: Align;
   justify?: Justify;
   px?: PX;
   orientation?: Orientation;
@@ -11,7 +10,7 @@ interface GridProps {
 }
 
 export default function Grid(props: GridProps) {
-  return <div className={`flex h-full w-full max-md:flex-col ${props.justify} ${props.align} ${props.px} ${props.orientation} ${props.gap} `}>{props.children}</div>;
+  return <div className={`flex h-full w-full max-md:flex-col ${props.justify} ${props.px} ${props.orientation} ${props.gap} `}>{props.children}</div>;
 }
 
 interface GridChildProps {
