@@ -1,7 +1,7 @@
 import { Orientation, Justify, PX, Align, Gap } from '../enum';
 import { LgSize, MdSize, XlSize } from '../enum/reponsive-sizes';
 
-interface ContainerProps {
+interface GridProps {
   children: React.ReactNode;
   align?: Align;
   justify?: Justify;
@@ -10,11 +10,11 @@ interface ContainerProps {
   gap: Gap;
 }
 
-export default function Container(props: ContainerProps) {
+export default function Grid(props: GridProps) {
   return <div className={`flex h-full w-full max-md:flex-col ${props.justify} ${props.align} ${props.px} ${props.orientation} ${props.gap} `}>{props.children}</div>;
 }
 
-interface ContainerChildProps {
+interface GridChildProps {
   children?: React.ReactNode;
   mdSize?: MdSize;
   lgSize?: LgSize;
@@ -24,6 +24,6 @@ interface ContainerChildProps {
   gap: Gap;
 }
 
-export function ContainerChild(props: ContainerChildProps) {
-  return <div className={`flex w-full items-center ${props.justify} ${props.mdSize} ${props.orientation} ${props.gap} max-md:flex-col max-md:text-center`}>{props.children}</div>;
+export function GridChild(props: GridChildProps) {
+  return <div className={`flex w-full items-start justify-center ${props.justify} ${props.mdSize} ${props.orientation} ${props.gap} max-md:flex-col max-md:text-center`}>{props.children}</div>;
 }

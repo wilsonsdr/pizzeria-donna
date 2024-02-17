@@ -6,7 +6,7 @@ export default function Document() {
       <Head />
       <title>Pizzaria Donna</title>
       <link rel='shortcut icon' href='/img/favicon.svg' type='image/x-icon' />
-      <body>
+      <body className='font-body'>
         <Main />
         <NextScript />
       </body>
