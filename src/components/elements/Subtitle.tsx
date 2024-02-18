@@ -8,7 +8,7 @@ interface SubtitleProps {
 }
 
 export default function Subtitle(props: SubtitleProps) {
-  return <h2 className={`font-title text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl ${props.color} ${props.py}`}>{props.text}</h2>;
+  return <h2 className={`font-title text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-5xl ${props.color} ${props.py}`}>{props.text}</h2>;
 }
 
 interface SubtitleContainerProps {

@@ -36,12 +36,10 @@ export default function Home() {
           <Grid gap={Gap['32px']}>
             <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['16px']}>
               <Subtitle text="Don't be afraid, the hungry doens't have to wait" />
-              <ul className='text-black md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl'>
-                <li> ✓ First quality ingredients</li>
-                <li> ✓ Inspired recipes</li>
-                <li> ✓ Love in every detail</li>
-                <li> ✓ Our commitment is to always be present and meet your needs</li>
-              </ul>
+              <P text='✓ First quality ingredients' />
+              <P text='✓ Inspired recipes' />
+              <P text='✓ Love in every detail' />
+              <P text='✓ Our commitment is to always be present and meet your needs' />
             </GridChild>
             <GridChild gap={Gap['0px']} mdSize={MdSize.w6v12}>
               <Image priority={true} className='bg-cover bg-center bg-no-repeat object-cover max-md:h-[300px]' src={'/img/background/pizza02.jpg'} width={800} height={500} alt='person making pizza'></Image>
@@ -60,8 +58,8 @@ export default function Home() {
                   <div className='max-md:border-r-transparent flex h-[250px] w-full items-center justify-center border-r-4 border-r-[#2ba600] text-white max-md:h-auto max-md:border-b-4 max-md:border-r-0 max-md:border-b-[#2ba600]'>
                     <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
                       <SubtitleContainer gap={Gap['16px']} color={Color.white}>
-                        <h3 className='font-title text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>Pepperoni Classic</h3>
-                        <p>It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, tomato sauce and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza.</p>
+                        <h3 className='font-title text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>Pepperoni Classic</h3>
+                        <p className='text-lg sm:text-lg md:text-base lg:text-xl xl:text-xl 2xl:text-xl'>It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, tomato sauce and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza.</p>
                       </SubtitleContainer>
                     </BackgroundOverlay>
                   </div>
