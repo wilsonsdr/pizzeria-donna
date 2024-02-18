@@ -23,7 +23,7 @@ export default function Home() {
       <header>
         <BackgroundImage url='/img/background/pizza01.jpg'>
           <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
-            <Logo span1='Pizzeria' span2="d'" span3='Donna' />
+            <Logo span1="Pizzeria" span2='Donna' />
             <Image priority={true} className='absolute -bottom-[70px] -left-1' src={'/img/decorative/plant.svg'} alt='plant' width={80} height={80}></Image>
           </BackgroundOverlay>
         </BackgroundImage>
@@ -89,13 +89,13 @@ export default function Home() {
         </Container>
       </main>
       <footer>
-        <BackgroundImage url='/img/background/footer.jpg'>
+        <div className='h-[350px] bg-black'>
           <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
-            <Logo span1='Pizzeria' span2="d'" span3='Donna' />
+            <Logo span1="Pizzeria" span2='Donna' />
             <Image priority={true} className='absolute -top-[70px] right-7 max-sm:-top-[50px] max-sm:w-28' src={'/img/decorative/tomato.svg'} alt='folha' width={100} height={100}></Image>
           </BackgroundOverlay>
-        </BackgroundImage>
-        <WatsonAssistant/>
+        </div>
+        <WatsonAssistant />
       </footer>
     </>
   );
