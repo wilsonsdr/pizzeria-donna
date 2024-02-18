@@ -1,56 +1,104 @@
-![pizzaria-donna](https://user-images.githubusercontent.com/81364355/236247210-12f2a500-7dca-4020-9bc5-c17d41c9da4a.png)
+<div align="center" id="top"> 
+  <img src="https://github.com/wilsonsdr/pizzeria-donna/assets/81364355/bd479c64-6788-4080-b79d-774158000cfc" alt="Pizzeria Donna" />
 
-# Descrição do projeto
+&#xa0;
 
-Este projeto foi elaborado durante o meu período de estágio na IBM, o tema era livre, porém era obrigatório que utilizasse uma ferramenta da empresa para realização do projeto, optei por utilizar o IBM Watson Assistant, para criação de um chatbot
+  <!-- <a href="https://pizzeriaadonna.netlify.app">Demo</a> -->
+</div>
 
-O tema escolhido foi a violência doméstica contra as mulheres, um dos problemas relacionado a isso é por não ter um meio de comunicação confiável e seguro, em que a vítima possa realizar a sua denúncia de forma discreta sem causar suspeita do agressor
+<h1 align="center">Pizzeria Donna</h1>
 
-Pensando nisso, desenvolvi uma landing page com design temático de pizzaria, em que a vítima simularia estar realizando um pedido de uma pizza através do chatbot, mas na realidade, as informações fornecidas serão repassadas diretamente a polícia
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/wilsonsdr/pizzeria-donna?color=56BEB8&style=flat">
+
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/wilsonsdr/pizzeria-donna?color=56BEB8&style=flat">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/wilsonsdr/pizzeria-donna?color=56BEB8&style=flat">
+
+  <img alt="License" src="https://img.shields.io/github/license/wilsonsdr/pizzeria-donna?color=56BEB8&style=flat">
+
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/wilsonsdr/pizzeria-donna?color=56BEB8" /> -->
+
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/wilsonsdr/pizzeria-donna?color=56BEB8" /> -->
+
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/wilsonsdr/pizzeria-donna?color=56BEB8" /> -->
+</p>
+
+<!-- Status -->
+
+<!-- <h4 align="center">
+	🚧  Pizzeria-donna 🚀 Under construction...  🚧
+</h4>
+
+<hr> -->
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/wilsonsdr" target="_blank">Author</a>
+</p>
 
 <br>
 
-| Demonstração                                                                                                                | Funcionalidades                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://user-images.githubusercontent.com/81364355/184733110-058516f8-5cb8-4837-b89e-9b1f9728e5b7.gif" width=300> | `Funcionalidade 1`: Informar o nome, nesse caso, somente nomes femininos foram adicionados ao banco de dados <br> `Funcionalidade 2`: Informar o endereço e o complemento juntos <br> `Funcionalidade 3a`: Caso optar por selecionar "Pizza Broto" indicará que a vítima está sozinha <br> `Funcionalidade 3b`: Caso optar por selecionar "Pizza Média" indicará que a vítima está acompanhada <br> `Funcionalidade 4`: Informar caso haja facas ou armas de fogo no ambiente <br> `Funcionalidade 5`: Sua denúncia foi realizada e suas informações serão repassadas à polícia |
+## :dart: About
 
-### Como acessar o projeto
+This project was developed during my internship at IBM, the theme was free, but it was mandatory to use a company tool for the project, I chose to use IBM Watson Assistant, to create a chatbot.
 
-Você pode acessar clicando nesse [link](https://pizzaria-donna.vercel.app/)
+The chosen theme was domestic violence, one of the problems related to this is the lack of a reliable and secure means of communication, where the victim can make their report discreetly without arousing suspicion from the aggressor.
 
-### Como rodar o projeto localmente
+With that in mind, I developed a landing page with a pizzeria-themed design, where the victim would simulate placing an order for a pizza through the chatbot, but in reality, the information provided would be forwarded directly to the police.
 
-Se você quiser executar o projeto em sua máquina local, siga estas etapas:
+## :sparkles: Features
 
-1. Clone este repositório em sua máquina local
-2. Abra o terminal e navegue até o diretório do projeto
-3. Digite o seguinte comando para instalar as dependências:
+:heavy_check_mark: **Feature 1**: Inform your name;\
+:heavy_check_mark: **Feature 2**: Inform your address and any additional information;\
+:heavy_check_mark: **Feature 3**: Select your pizza flavor;\
+:heavy_check_mark: **Feature 4**: If choosing 'Personal-sized' it will indicate that the victim is alone, otherwise, the victim is accompanied;\
+:heavy_check_mark: **Feature 5**: If choosing 'Yes' for cutlery, it will indicate that there are dangerous material in that environment;\
+:heavy_check_mark: **Feature 6**: Your report has been made, and your information will be forwarded to the police;
+
+## :rocket: Technologies
+
+The following tools were used in this project:
+
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Watson Assistant](https://www.ibm.com/products/watsonx-assistant/)
+
+## :white_check_mark: Requirements
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting
 
 ```bash
-npm install
+# Clone this project
+$ git clone https://github.com/wilsonsdr/pizzeria-donna
+
+# Access
+$ cd pizzeria-donna
+
+# Install dependencies
+$ npm install
+
+# Run the project
+$ npm run dev
+
+# The server will initialize in the <http://localhost:3000>
 ```
 
-4. Agora, execute o seguinte comando para iniciar o servidor local:
+## :memo: License
 
-```bash
-npm run dev
-```
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
-5. O projeto deve estar disponível em http://localhost:3000/ em seu navegador
+Made with :heart: by <a href="https://github.com/wilsonsdr" target="_blank">wilsonsdr</a>
 
-### Tecnologias utilizadas
+&#xa0;
 
-Aqui estão algumas das tecnologias que utilizei para desenvolver meu projeto:
-
-- Next.js
-- React
-- Typescript
-- Tailwind
-
-### Autor
-
-Wilson Souto dos Reis
-
-### Contato
-
-Você pode entrar em contato comigo por meio do seguinte endereço de e-mail: wilsonsdr@gmail.com
+<a href="#top">Back to top</a>
