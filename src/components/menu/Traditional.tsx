@@ -24,18 +24,18 @@ export default function Traditional() {
       </Grid>
       <Grid gap={Gap['32px']}>
         <GridChild mdSize={MdSize.w6v12}>
-          <PizzaDetail name='Supreme' price={11.99} ingredients='Pepperoni, sausage, bell peppers, onions, mushrooms, tomato sauce, and mozzarella cheese' />
-        </GridChild>
-        <GridChild mdSize={MdSize.w6v12}>
-          <PizzaDetail name='Vegetarian' price={10.99} ingredients='Bell peppers, onions, mushrooms, black olives, tomato sauce, and mozzarella cheese' />
-        </GridChild>
-      </Grid>
-      <Grid gap={Gap['32px']}>
-        <GridChild mdSize={MdSize.w6v12}>
           <PizzaDetail name='Meat Feast' price={11.99} ingredients='Pepperoni, sausage, bacon, ham, tomato sauce, and mozzarella cheese' />
         </GridChild>
         <GridChild mdSize={MdSize.w6v12}>
           <PizzaDetail name='Mushroom and Olive' price={10.99} ingredients='Mushrooms, black olives, tomato sauce, and mozzarella cheese' />
+        </GridChild>
+      </Grid>
+      <Grid gap={Gap['32px']}>
+        <GridChild mdSize={MdSize.w6v12}>
+          <PizzaDetail name='Neapolitan' price={11.99} ingredients='Tomato sauce, mozzarella cheese, basil, and olive oil' />
+        </GridChild>
+        <GridChild mdSize={MdSize.w6v12}>
+          <PizzaDetail name='Vegetarian' price={10.99} ingredients='Bell peppers, onions, mushrooms, black olives, tomato sauce, and mozzarella cheese' />
         </GridChild>
       </Grid>
     </ul>

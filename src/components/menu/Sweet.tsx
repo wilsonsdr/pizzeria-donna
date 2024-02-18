@@ -27,7 +27,7 @@ export default function Sweet() {
           <PizzaDetail name='Peaches and Cream' price={11.99} ingredients='Sliced peaches, mascarpone cheese, honey, and almonds' />
         </GridChild>
         <GridChild mdSize={MdSize.w6v12}>
-          <PizzaDetail name='Banana Split Sensation' price={12.99} ingredients='Banana slices, chocolate sauce, strawberry sauce, chopped nuts, and whipped cream' />
+          <PizzaDetail name='Raspberry White Chocolate' price={10.99} ingredients=' White chocolate sauce, raspberries, white chocolate shavings, and powdered sugar' />
         </GridChild>
       </Grid>
       <Grid gap={Gap['32px']}>
@@ -35,7 +35,7 @@ export default function Sweet() {
           <PizzaDetail name='Apple Crumble' price={10.99} ingredients='Apple slices, cinnamon, streusel topping, and vanilla ice cream' />
         </GridChild>
         <GridChild mdSize={MdSize.w6v12}>
-          <PizzaDetail name='Raspberry White Chocolate' price={10.99} ingredients=' White chocolate sauce, raspberries, white chocolate shavings, and powdered sugar' />
+          <PizzaDetail name='Banana Split Sensation' price={12.99} ingredients='Banana slices, chocolate sauce, strawberry sauce, chopped nuts, and whipped cream' />
         </GridChild>
       </Grid>
     </ul>
