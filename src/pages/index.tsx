@@ -6,12 +6,12 @@ import Subtitle, { SubtitleContainer } from '@/components/elements/Subtitle';
 import P from '@/components/elements/P';
 import Container from '@/components/layout/Container';
 import Grid, { GridChild } from '@/components/layout/Grid';
-import { Doce, Especial, Fit, Tradicional } from '@/components/menu/Menu';
+import { Sweet, Special, Fit, Traditional } from '@/components/menu/Menu';
 import Logo from '@/components/elements/Logo';
-import PizzaFlavor from '@/components/elements/PizzaFlavor';
+import PizzaCategoryOption from '@/components/elements/PizzaCategoryOption';
 
 export default function Home() {
-  const [showMenu, setShowMenu] = useState('Tradicionais');
+  const [showMenu, setShowMenu] = useState('Traditional');
 
   const handleClick = (menu: string) => {
     setShowMenu(menu);
@@ -60,8 +60,8 @@ export default function Home() {
                   <div className='max-md:border-r-transparent flex h-[250px] w-full items-center justify-center border-r-4 border-r-[#2ba600] text-white max-md:h-auto max-md:border-b-4 max-md:border-r-0 max-md:border-b-[#2ba600]'>
                     <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
                       <SubtitleContainer gap={Gap['16px']} color={Color.white}>
-                        <h3 className='font-title text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>Pepperoni Pizza</h3>
-                        <p>It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza.</p>
+                        <h3 className='font-title text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>Pepperoni Classic</h3>
+                        <p>It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, tomato sauce and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza.</p>
                       </SubtitleContainer>
                     </BackgroundOverlay>
                   </div>
@@ -73,20 +73,20 @@ export default function Home() {
         </Container>
         <Container gap={Gap['80px']} px={PX['32px']}>
           <SubtitleContainer gap={Gap['16px']} color={Color.black}>
-            <Subtitle text='Cardapío' color={Color.red} />
-            <P text='Grande variedades de produtos e ingredientes, não deixe para amanhã o que você pode comer hoje.' />
+            <Subtitle text='Menu' color={Color.red} />
+            <P text="A wide variety of products and ingredients, don't leave for tomorrow what you can eat today." />
           </SubtitleContainer>
           <ul className='relative m-auto flex w-7/12 items-center justify-center gap-8 text-center text-xl max-md:flex-col max-sm:w-full sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>
-            <PizzaFlavor flavor='Tradicionais' isActive={showMenu === 'Tradicionais'} onClick={() => handleClick('Tradicionais')} />
-            <PizzaFlavor flavor='Especiais' isActive={showMenu === 'Especiais'} onClick={() => handleClick('Especiais')} />
-            <PizzaFlavor flavor='Doce' isActive={showMenu === 'Doce'} onClick={() => handleClick('Doce')} />
-            <PizzaFlavor flavor='Fit' isActive={showMenu === 'Fit'} onClick={() => handleClick('Fit')} />
+            <PizzaCategoryOption flavor='Traditional' isActive={showMenu === 'Traditional'} onClick={() => handleClick('Traditional')} />
+            <PizzaCategoryOption flavor='Special' isActive={showMenu === 'Special'} onClick={() => handleClick('Special')} />
+            <PizzaCategoryOption flavor='Sweet' isActive={showMenu === 'Sweet'} onClick={() => handleClick('Sweet')} />
+            <PizzaCategoryOption flavor='Fit' isActive={showMenu === 'Fit'} onClick={() => handleClick('Fit')} />
           </ul>
-          {showMenu === 'Tradicionais' && <Tradicional />}
-          {showMenu === 'Especiais' && <Especial />}
-          {showMenu === 'Doce' && <Doce />}
+          {showMenu === 'Traditional' && <Traditional />}
+          {showMenu === 'Special' && <Special />}
+          {showMenu === 'Sweet' && <Sweet />}
           {showMenu === 'Fit' && <Fit />}
-          <Image priority={true} className='absolute -left-2 top-0' src={'/img/decorative/pepper.svg'} alt='folha' width={100} height={100}></Image>
+          <Image priority={true} className='absolute -left-2 top-0' src={'/img/decorative/pepper.svg'} alt='pepper' width={100} height={100}></Image>
         </Container>
       </main>
       <footer>

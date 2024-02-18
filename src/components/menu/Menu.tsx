@@ -1,6 +1,6 @@
-import Doce from './Doce';
-import Especial from './Especial';
+import Sweet from './Sweet';
+import Special from './Special';
 import Fit from './Fit';
-import Tradicional from './Tradicional';
+import Traditional from './Traditional';
 
-export { Doce, Especial, Fit, Tradicional };
+export { Sweet, Special, Fit, Traditional };
