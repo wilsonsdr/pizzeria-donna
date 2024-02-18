@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import BackgroundImage, { BackgroundOverlay } from '@/components/layout/BackgroundImage';
-import { MdSize, Orientation, Justify, PY, PX, Gap, Color } from '@/components/enum';
+import { MdSize, Orientation, Justify, PY, PX, Gap, Color, LgSize } from '@/components/enum';
 import Subtitle, { SubtitleContainer } from '@/components/elements/Subtitle';
 import P from '@/components/elements/P';
 import Container from '@/components/layout/Container';
@@ -30,16 +30,16 @@ export default function Home() {
       <main className='flex flex-col'>
         <Container gap={Gap['80px']} px={PX['32px']}>
           <SubtitleContainer gap={Gap['16px']} color={Color.black}>
-            <Subtitle text='United just for one reason' />
+            <Subtitle color={Color.black} text='United just for one reason' />
             <P text='We are the first pizzeria to focus on this kind of service. Contributing to a better experience, security, comfort and quality. To place an order, simply use our chatbot! ' />
           </SubtitleContainer>
           <Grid gap={Gap['32px']}>
             <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['16px']}>
-              <Subtitle text="Don't be afraid, the hungry doens't have to wait" />
-              <P text='✓ First quality ingredients' />
-              <P text='✓ Inspired recipes' />
-              <P text='✓ Love in every detail' />
-              <P text='✓ Our commitment is to always be present and meet your needs' />
+              <Subtitle color={Color.black} text="Don't be afraid, the hungry doens't have to wait" />
+              <P color={Color.black} text='✓ First quality ingredients' />
+              <P color={Color.black} text='✓ Inspired recipes' />
+              <P color={Color.black} text='✓ Love in every detail' />
+              <P color={Color.black} text='✓ Our commitment is to always be present and meet your needs' />
             </GridChild>
             <GridChild gap={Gap['0px']} mdSize={MdSize.w6v12}>
               <Image priority={true} className='bg-cover bg-center bg-no-repeat object-cover max-md:h-[300px]' src={'/img/background/pizza02.jpg'} width={800} height={500} alt='person making pizza'></Image>
@@ -49,7 +49,7 @@ export default function Home() {
         <Container gap={Gap['0px']} px={PX['0px']}>
           <BackgroundImage url='/img/background/pizza03.jpg'>
             <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
-              <Subtitle text='Weekly Promotion' color={Color.green} py={PY['32px']} />
+              <Subtitle text='Weekly Promotion' color={Color.green} />
               <Grid gap={Gap['0px']} justify={Justify.center}>
                 <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
                   <Image priority={true} className='h-[400px] w-full bg-cover bg-center bg-no-repeat object-cover max-md:hidden' src={'/img/background/pizza03.jpg'} width={1280} height={1280} alt='Pepperoni pizza'></Image>

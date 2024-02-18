@@ -20,7 +20,7 @@ interface GridChildProps {
   xlSize?: XlSize;
   justify?: Justify;
   orientation?: Orientation;
-  gap: Gap;
+  gap?: Gap;
 }
 
 export function GridChild(props: GridChildProps) {

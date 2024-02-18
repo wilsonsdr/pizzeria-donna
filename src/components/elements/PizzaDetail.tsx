@@ -3,7 +3,7 @@ import { Color } from '../enum';
 
 interface PizzaDetailProps {
   name: string;
-  price: string;
+  price: number;
   ingredients: string;
   color?: Color;
 }
