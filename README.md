@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="https://github.com/wilsonsdr/pizzeria-donna/assets/81364355/bd479c64-6788-4080-b79d-774158000cfc" alt="Pizzeria Donna" />
+  <img src="https://github.com/wilsonsdr/pizzeria-donna/assets/81364355/0ff4acf6-9cef-4656-ae98-c9f238c518ab" alt="Pizzeria Donna" />
 
 &#xa0;
 
