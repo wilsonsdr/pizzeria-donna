@@ -10,4 +10,5 @@ export enum PY {
   '8px' = 'py-2',
   '16px' = 'py-4',
   '32px' = 'py-8',
+  '80px' = 'py-20',
 }

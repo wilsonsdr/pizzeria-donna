@@ -48,7 +48,7 @@ export default function Home() {
         </Container>
         <Container gap={Gap['0px']} px={PX['0px']}>
           <BackgroundImage url='/img/background/pizza03.jpg'>
-            <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
+            <BackgroundOverlay py={PY['80px']} px={PX['32px']}>
               <Subtitle color={Color.green} text='Weekly Promotion' />
               <Grid gap={Gap['0px']} justify={Justify.center}>
                 <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
