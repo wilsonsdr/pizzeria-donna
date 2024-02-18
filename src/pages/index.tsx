@@ -49,7 +49,7 @@ export default function Home() {
         <Container gap={Gap['0px']} px={PX['0px']}>
           <BackgroundImage url='/img/background/pizza03.jpg'>
             <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
-              <Subtitle text='Weekly Promotion' color={Color.green} />
+              <Subtitle color={Color.green} text='Weekly Promotion' />
               <Grid gap={Gap['0px']} justify={Justify.center}>
                 <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
                   <Image priority={true} className='h-[400px] w-full bg-cover bg-center bg-no-repeat object-cover max-md:hidden' src={'/img/background/pizza03.jpg'} width={1280} height={1280} alt='Pepperoni pizza'></Image>
@@ -65,13 +65,13 @@ export default function Home() {
                   </div>
                 </GridChild>
               </Grid>
-              <Image priority={true} className='absolute -top-14 right-0' src={'/img/decorative/leaf.svg'} alt='folha' width={60} height={60}></Image>
+              <Image priority={true} className='absolute -top-12 right-0 max-sm:w-14' src={'/img/decorative/leaf.svg'} alt='leaf' width={60} height={60}></Image>
             </BackgroundOverlay>
           </BackgroundImage>
         </Container>
         <Container gap={Gap['80px']} px={PX['32px']}>
           <SubtitleContainer gap={Gap['16px']} color={Color.black}>
-            <Subtitle text='Menu' color={Color.red} />
+            <Subtitle color={Color.red} text='Menu' />
             <P text="A wide variety of products and ingredients, don't leave for tomorrow what you can eat today." />
           </SubtitleContainer>
           <ul className='relative m-auto flex w-7/12 items-center justify-center gap-8 text-center text-xl max-md:flex-col max-sm:w-full sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>
@@ -91,7 +91,7 @@ export default function Home() {
         <BackgroundImage url='/img/background/footer.jpg'>
           <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
             <Logo span1='Pizzeria' span2="d'" span3='Donna' />
-            <Image priority={true} className='absolute -top-[70px] right-7' src={'/img/decorative/tomato.svg'} alt='folha' width={100} height={100}></Image>
+            <Image priority={true} className='absolute -top-[70px] right-7 max-sm:-top-[50px] max-sm:w-28' src={'/img/decorative/tomato.svg'} alt='folha' width={100} height={100}></Image>
           </BackgroundOverlay>
         </BackgroundImage>
       </footer>
