@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import BackgroundImage, { BackgroundOverlay } from '@/components/layout/BackgroundImage';
-import { MdSize, Orientation, Justify, PY, PX, Gap, Color, LgSize } from '@/components/enum';
+import { MdSize, Orientation, Justify, PY, PX, Gap, Color } from '@/components/enum';
 import Subtitle, { SubtitleContainer } from '@/components/elements/Subtitle';
 import P from '@/components/elements/P';
 import Container from '@/components/layout/Container';
@@ -9,6 +9,7 @@ import Grid, { GridChild } from '@/components/layout/Grid';
 import { Sweet, Special, Fit, Traditional } from '@/components/menu/Menu';
 import Logo from '@/components/elements/Logo';
 import PizzaCategoryOption from '@/components/elements/PizzaCategoryOption';
+import WatsonAssistant from '@/components/elements/WatsonAssistant';
 
 export default function Home() {
   const [showMenu, setShowMenu] = useState('Traditional');
@@ -94,6 +95,7 @@ export default function Home() {
             <Image priority={true} className='absolute -top-[70px] right-7 max-sm:-top-[50px] max-sm:w-28' src={'/img/decorative/tomato.svg'} alt='folha' width={100} height={100}></Image>
           </BackgroundOverlay>
         </BackgroundImage>
+        <WatsonAssistant/>
       </footer>
     </>
   );
