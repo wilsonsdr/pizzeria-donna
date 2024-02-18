@@ -44,24 +44,24 @@ export default function Home() {
               </ul>
             </GridChild>
             <GridChild gap={Gap['0px']} mdSize={MdSize.w6v12}>
-              <Image priority={true} className='bg-cover bg-center bg-no-repeat object-cover max-md:h-[300px]' src={'/img/background/pizza02.jpg'} width={800} height={500} alt='pessoa fazendo pizza'></Image>
+              <Image priority={true} className='bg-cover bg-center bg-no-repeat object-cover max-md:h-[300px]' src={'/img/background/pizza02.jpg'} width={800} height={500} alt='person making pizza'></Image>
             </GridChild>
           </Grid>
         </Container>
         <Container gap={Gap['0px']} px={PX['0px']}>
           <BackgroundImage url='/img/background/pizza03.jpg'>
             <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
-              <Subtitle text='Promoção da semana' color={Color.green} py={PY['32px']} />
+              <Subtitle text='Weekly Promotion' color={Color.green} py={PY['32px']} />
               <Grid gap={Gap['0px']} justify={Justify.center}>
                 <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
-                  <Image priority={true} className='h-[400px] w-full bg-cover bg-center bg-no-repeat object-cover max-md:hidden' src={'/img/background/pizza03.jpg'} width={1280} height={1280} alt='pizza de calabresa'></Image>
+                  <Image priority={true} className='h-[400px] w-full bg-cover bg-center bg-no-repeat object-cover max-md:hidden' src={'/img/background/pizza03.jpg'} width={1280} height={1280} alt='Pepperoni pizza'></Image>
                 </GridChild>
                 <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
                   <div className='max-md:border-r-transparent flex h-[250px] w-full items-center justify-center border-r-4 border-r-[#2ba600] text-white max-md:h-auto max-md:border-b-4 max-md:border-r-0 max-md:border-b-[#2ba600]'>
                     <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
                       <SubtitleContainer gap={Gap['16px']} color={Color.white}>
-                        <h3 className='font-title text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>Pizza Calabresa</h3>
-                        <p>É especialmente preparada com recheio de linguiça calabresa de primeira qualidade, queijo muçarela e orégano. A massa deliciosa e macia e a borda crocante complementam a nossa versão da pizza de Calabresa.</p>
+                        <h3 className='font-title text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>Pepperoni Pizza</h3>
+                        <p>It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza.</p>
                       </SubtitleContainer>
                     </BackgroundOverlay>
                   </div>
