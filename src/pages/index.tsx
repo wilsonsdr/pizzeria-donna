@@ -55,7 +55,7 @@ export default function Home() {
                   <Image priority={true} className='h-[400px] w-full bg-cover bg-center bg-no-repeat object-cover max-md:hidden' src={'/img/background/pizza03.jpg'} width={1280} height={1280} alt='Pepperoni pizza'></Image>
                 </GridChild>
                 <GridChild mdSize={MdSize.w6v12} justify={Justify.center} orientation={Orientation.mdCol} gap={Gap['0px']}>
-                  <div className='max-md:border-r-transparent flex h-[250px] w-full items-center justify-center border-r-4 border-r-[#2ba600] text-white max-md:h-auto max-md:border-b-4 max-md:border-r-0 max-md:border-b-[#2ba600]'>
+                  <div className='max-md:border-r-transparent flex h-[250px] w-full items-center justify-center border-r-4 border-r-green text-white max-md:h-auto max-md:border-b-4 max-md:border-r-0 max-md:border-b-green'>
                     <BackgroundOverlay py={PY['32px']} px={PX['32px']}>
                       <SubtitleContainer gap={Gap['16px']} color={Color.white}>
                         <h3 className='font-title text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl'>Pepperoni Classic</h3>

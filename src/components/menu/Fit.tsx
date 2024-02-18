@@ -11,7 +11,7 @@ export default function Fit() {
           <PizzaDetail name='Supreme' price={13.99} ingredients='Shredded chicken, turkey bacon, eggs, spinach, cherry tomatoes, and black olives' />
         </GridChild>
         <GridChild mdSize={MdSize.w6v12}>
-          <PizzaDetail name='Veggie Delight' price={12.99} ingredients='Zucchini, bell peppers, mushrooms, red onion, artichoke hearts, and sun-dried tomatoes' />
+          <PizzaDetail name='Veggie Delight' price={12.99} ingredients='Zucchini, bell peppers, mushrooms, red onion, artichoke hearts, and tomatoes' />
         </GridChild>
       </Grid>
       <Grid gap={Gap['32px']}>
@@ -27,7 +27,7 @@ export default function Fit() {
           <PizzaDetail name='Hawaiian' price={12.99} ingredients='Grilled chicken, turkey bacon, pineapple, red onion, barbecue sauce, and cilantro' />
         </GridChild>
         <GridChild mdSize={MdSize.w6v12}>
-          <PizzaDetail name='BBQ Chicken' price={13.99} ingredients='Barbecue chicken, red onion, cilantro, mozzarella, barbecue sauce, and ranch drizzle' />
+          <PizzaDetail name='Spinach and Ricotta' price={13.99} ingredients='Spinach, ricotta cheese, cherry tomatoes, red onion, tomato sauce' />
         </GridChild>
       </Grid>
       <Grid gap={Gap['32px']}>
